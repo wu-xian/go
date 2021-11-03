@@ -1,0 +1,341 @@
+     1  *syntax.File {
+     2  .  Pragma: nil
+     3  .  PkgName: main @ main.go:1:9
+     4  .  DeclList: []syntax.Decl (4 entries) {
+     5  .  .  0: *syntax.ImportDecl {
+     6  .  .  .  Group: *syntax.Group {}
+     7  .  .  .  Pragma: nil
+     8  .  .  .  LocalPkgName: nil
+     9  .  .  .  Path: *syntax.BasicLit {
+    10  .  .  .  .  Value: "\"fmt\""
+    11  .  .  .  .  Kind: 4
+    12  .  .  .  .  Bad: false
+    13  .  .  .  }
+    14  .  .  }
+    15  .  .  1: *syntax.ImportDecl {
+    16  .  .  .  Group: *syntax.Group {}
+    17  .  .  .  Pragma: nil
+    18  .  .  .  LocalPkgName: nil
+    19  .  .  .  Path: *syntax.BasicLit {
+    20  .  .  .  .  Value: "\"os\""
+    21  .  .  .  .  Kind: 4
+    22  .  .  .  .  Bad: false
+    23  .  .  .  }
+    24  .  .  }
+    25  .  .  2: *syntax.ImportDecl {
+    26  .  .  .  Group: *syntax.Group {}
+    27  .  .  .  Pragma: nil
+    28  .  .  .  LocalPkgName: nil
+    29  .  .  .  Path: *syntax.BasicLit {
+    30  .  .  .  .  Value: "\"github.com/golang/go/research/ast-dumper/syntax\""
+    31  .  .  .  .  Kind: 4
+    32  .  .  .  .  Bad: false
+    33  .  .  .  }
+    34  .  .  }
+    35  .  .  3: *syntax.FuncDecl {
+    36  .  .  .  Pragma: nil
+    37  .  .  .  Recv: nil
+    38  .  .  .  Name: main @ main.go:10:6
+    39  .  .  .  TParamList: nil
+    40  .  .  .  Type: *syntax.FuncType {
+    41  .  .  .  .  ParamList: nil
+    42  .  .  .  .  ResultList: nil
+    43  .  .  .  }
+    44  .  .  .  Body: *syntax.BlockStmt {
+    45  .  .  .  .  List: []syntax.Stmt (11 entries) {
+    46  .  .  .  .  .  0: *syntax.IfStmt {
+    47  .  .  .  .  .  .  Init: nil
+    48  .  .  .  .  .  .  Cond: *syntax.Operation {
+    49  .  .  .  .  .  .  .  Op: !=
+    50  .  .  .  .  .  .  .  X: *syntax.CallExpr {
+    51  .  .  .  .  .  .  .  .  Fun: len @ main.go:11:5
+    52  .  .  .  .  .  .  .  .  ArgList: []syntax.Expr (1 entries) {
+    53  .  .  .  .  .  .  .  .  .  0: *syntax.SelectorExpr {
+    54  .  .  .  .  .  .  .  .  .  .  X: os @ main.go:11:9
+    55  .  .  .  .  .  .  .  .  .  .  Sel: Args @ main.go:11:12
+    56  .  .  .  .  .  .  .  .  .  }
+    57  .  .  .  .  .  .  .  .  }
+    58  .  .  .  .  .  .  .  .  HasDots: false
+    59  .  .  .  .  .  .  .  }
+    60  .  .  .  .  .  .  .  Y: *syntax.BasicLit {
+    61  .  .  .  .  .  .  .  .  Value: "2"
+    62  .  .  .  .  .  .  .  .  Kind: 0
+    63  .  .  .  .  .  .  .  .  Bad: false
+    64  .  .  .  .  .  .  .  }
+    65  .  .  .  .  .  .  }
+    66  .  .  .  .  .  .  Then: *syntax.BlockStmt {
+    67  .  .  .  .  .  .  .  List: []syntax.Stmt (3 entries) {
+    68  .  .  .  .  .  .  .  .  0: *syntax.ExprStmt {
+    69  .  .  .  .  .  .  .  .  .  X: *syntax.CallExpr {
+    70  .  .  .  .  .  .  .  .  .  .  Fun: *syntax.SelectorExpr {
+    71  .  .  .  .  .  .  .  .  .  .  .  X: fmt @ main.go:12:3
+    72  .  .  .  .  .  .  .  .  .  .  .  Sel: Println @ main.go:12:7
+    73  .  .  .  .  .  .  .  .  .  .  }
+    74  .  .  .  .  .  .  .  .  .  .  ArgList: []syntax.Expr (1 entries) {
+    75  .  .  .  .  .  .  .  .  .  .  .  0: *syntax.BasicLit {
+    76  .  .  .  .  .  .  .  .  .  .  .  .  Value: "\"Usage:\""
+    77  .  .  .  .  .  .  .  .  .  .  .  .  Kind: 4
+    78  .  .  .  .  .  .  .  .  .  .  .  .  Bad: false
+    79  .  .  .  .  .  .  .  .  .  .  .  }
+    80  .  .  .  .  .  .  .  .  .  .  }
+    81  .  .  .  .  .  .  .  .  .  .  HasDots: false
+    82  .  .  .  .  .  .  .  .  .  }
+    83  .  .  .  .  .  .  .  .  }
+    84  .  .  .  .  .  .  .  .  1: *syntax.ExprStmt {
+    85  .  .  .  .  .  .  .  .  .  X: *syntax.CallExpr {
+    86  .  .  .  .  .  .  .  .  .  .  Fun: *syntax.SelectorExpr {
+    87  .  .  .  .  .  .  .  .  .  .  .  X: fmt @ main.go:13:3
+    88  .  .  .  .  .  .  .  .  .  .  .  Sel: Println @ main.go:13:7
+    89  .  .  .  .  .  .  .  .  .  .  }
+    90  .  .  .  .  .  .  .  .  .  .  ArgList: []syntax.Expr (1 entries) {
+    91  .  .  .  .  .  .  .  .  .  .  .  0: *syntax.BasicLit {
+    92  .  .  .  .  .  .  .  .  .  .  .  .  Value: "\"\\tastdump [filename]\""
+    93  .  .  .  .  .  .  .  .  .  .  .  .  Kind: 4
+    94  .  .  .  .  .  .  .  .  .  .  .  .  Bad: false
+    95  .  .  .  .  .  .  .  .  .  .  .  }
+    96  .  .  .  .  .  .  .  .  .  .  }
+    97  .  .  .  .  .  .  .  .  .  .  HasDots: false
+    98  .  .  .  .  .  .  .  .  .  }
+    99  .  .  .  .  .  .  .  .  }
+   100  .  .  .  .  .  .  .  .  2: *syntax.ExprStmt {
+   101  .  .  .  .  .  .  .  .  .  X: *syntax.CallExpr {
+   102  .  .  .  .  .  .  .  .  .  .  Fun: *syntax.SelectorExpr {
+   103  .  .  .  .  .  .  .  .  .  .  .  X: os @ main.go:14:3
+   104  .  .  .  .  .  .  .  .  .  .  .  Sel: Exit @ main.go:14:6
+   105  .  .  .  .  .  .  .  .  .  .  }
+   106  .  .  .  .  .  .  .  .  .  .  ArgList: []syntax.Expr (1 entries) {
+   107  .  .  .  .  .  .  .  .  .  .  .  0: *syntax.BasicLit {
+   108  .  .  .  .  .  .  .  .  .  .  .  .  Value: "1"
+   109  .  .  .  .  .  .  .  .  .  .  .  .  Kind: 0
+   110  .  .  .  .  .  .  .  .  .  .  .  .  Bad: false
+   111  .  .  .  .  .  .  .  .  .  .  .  }
+   112  .  .  .  .  .  .  .  .  .  .  }
+   113  .  .  .  .  .  .  .  .  .  .  HasDots: false
+   114  .  .  .  .  .  .  .  .  .  }
+   115  .  .  .  .  .  .  .  .  }
+   116  .  .  .  .  .  .  .  }
+   117  .  .  .  .  .  .  .  Rbrace: syntax.Pos {}
+   118  .  .  .  .  .  .  }
+   119  .  .  .  .  .  .  Else: nil
+   120  .  .  .  .  .  }
+   121  .  .  .  .  .  1: *syntax.AssignStmt {
+   122  .  .  .  .  .  .  Op: :
+   123  .  .  .  .  .  .  Lhs: fname @ main.go:16:2
+   124  .  .  .  .  .  .  Rhs: *syntax.IndexExpr {
+   125  .  .  .  .  .  .  .  X: *syntax.SelectorExpr {
+   126  .  .  .  .  .  .  .  .  X: os @ main.go:16:11
+   127  .  .  .  .  .  .  .  .  Sel: Args @ main.go:16:14
+   128  .  .  .  .  .  .  .  }
+   129  .  .  .  .  .  .  .  Index: *syntax.BasicLit {
+   130  .  .  .  .  .  .  .  .  Value: "1"
+   131  .  .  .  .  .  .  .  .  Kind: 0
+   132  .  .  .  .  .  .  .  .  Bad: false
+   133  .  .  .  .  .  .  .  }
+   134  .  .  .  .  .  .  }
+   135  .  .  .  .  .  }
+   136  .  .  .  .  .  2: *syntax.AssignStmt {
+   137  .  .  .  .  .  .  Op: :
+   138  .  .  .  .  .  .  Lhs: *syntax.ListExpr {
+   139  .  .  .  .  .  .  .  ElemList: []syntax.Expr (2 entries) {
+   140  .  .  .  .  .  .  .  .  0: file @ main.go:17:2
+   141  .  .  .  .  .  .  .  .  1: err @ main.go:17:8
+   142  .  .  .  .  .  .  .  }
+   143  .  .  .  .  .  .  }
+   144  .  .  .  .  .  .  Rhs: *syntax.CallExpr {
+   145  .  .  .  .  .  .  .  Fun: *syntax.SelectorExpr {
+   146  .  .  .  .  .  .  .  .  X: os @ main.go:17:15
+   147  .  .  .  .  .  .  .  .  Sel: Open @ main.go:17:18
+   148  .  .  .  .  .  .  .  }
+   149  .  .  .  .  .  .  .  ArgList: []syntax.Expr (1 entries) {
+   150  .  .  .  .  .  .  .  .  0: fname @ main.go:17:23
+   151  .  .  .  .  .  .  .  }
+   152  .  .  .  .  .  .  .  HasDots: false
+   153  .  .  .  .  .  .  }
+   154  .  .  .  .  .  }
+   155  .  .  .  .  .  3: *syntax.IfStmt {
+   156  .  .  .  .  .  .  Init: nil
+   157  .  .  .  .  .  .  Cond: *syntax.Operation {
+   158  .  .  .  .  .  .  .  Op: !=
+   159  .  .  .  .  .  .  .  X: err @ main.go:18:5
+   160  .  .  .  .  .  .  .  Y: nil @ main.go:18:12
+   161  .  .  .  .  .  .  }
+   162  .  .  .  .  .  .  Then: *syntax.BlockStmt {
+   163  .  .  .  .  .  .  .  List: []syntax.Stmt (2 entries) {
+   164  .  .  .  .  .  .  .  .  0: *syntax.ExprStmt {
+   165  .  .  .  .  .  .  .  .  .  X: *syntax.CallExpr {
+   166  .  .  .  .  .  .  .  .  .  .  Fun: *syntax.SelectorExpr {
+   167  .  .  .  .  .  .  .  .  .  .  .  X: fmt @ main.go:19:3
+   168  .  .  .  .  .  .  .  .  .  .  .  Sel: Println @ main.go:19:7
+   169  .  .  .  .  .  .  .  .  .  .  }
+   170  .  .  .  .  .  .  .  .  .  .  ArgList: []syntax.Expr (2 entries) {
+   171  .  .  .  .  .  .  .  .  .  .  .  0: *syntax.BasicLit {
+   172  .  .  .  .  .  .  .  .  .  .  .  .  Value: "\"cannot open file: %v\""
+   173  .  .  .  .  .  .  .  .  .  .  .  .  Kind: 4
+   174  .  .  .  .  .  .  .  .  .  .  .  .  Bad: false
+   175  .  .  .  .  .  .  .  .  .  .  .  }
+   176  .  .  .  .  .  .  .  .  .  .  .  1: err @ main.go:19:39
+   177  .  .  .  .  .  .  .  .  .  .  }
+   178  .  .  .  .  .  .  .  .  .  .  HasDots: false
+   179  .  .  .  .  .  .  .  .  .  }
+   180  .  .  .  .  .  .  .  .  }
+   181  .  .  .  .  .  .  .  .  1: *syntax.ExprStmt {
+   182  .  .  .  .  .  .  .  .  .  X: *syntax.CallExpr {
+   183  .  .  .  .  .  .  .  .  .  .  Fun: *syntax.SelectorExpr {
+   184  .  .  .  .  .  .  .  .  .  .  .  X: os @ main.go:20:3
+   185  .  .  .  .  .  .  .  .  .  .  .  Sel: Exit @ main.go:20:6
+   186  .  .  .  .  .  .  .  .  .  .  }
+   187  .  .  .  .  .  .  .  .  .  .  ArgList: []syntax.Expr (1 entries) {
+   188  .  .  .  .  .  .  .  .  .  .  .  0: *syntax.BasicLit {
+   189  .  .  .  .  .  .  .  .  .  .  .  .  Value: "1"
+   190  .  .  .  .  .  .  .  .  .  .  .  .  Kind: 0
+   191  .  .  .  .  .  .  .  .  .  .  .  .  Bad: false
+   192  .  .  .  .  .  .  .  .  .  .  .  }
+   193  .  .  .  .  .  .  .  .  .  .  }
+   194  .  .  .  .  .  .  .  .  .  .  HasDots: false
+   195  .  .  .  .  .  .  .  .  .  }
+   196  .  .  .  .  .  .  .  .  }
+   197  .  .  .  .  .  .  .  }
+   198  .  .  .  .  .  .  .  Rbrace: syntax.Pos {}
+   199  .  .  .  .  .  .  }
+   200  .  .  .  .  .  .  Else: nil
+   201  .  .  .  .  .  }
+   202  .  .  .  .  .  4: *syntax.CallStmt {
+   203  .  .  .  .  .  .  Tok: defer
+   204  .  .  .  .  .  .  Call: *syntax.CallExpr {
+   205  .  .  .  .  .  .  .  Fun: *syntax.SelectorExpr {
+   206  .  .  .  .  .  .  .  .  X: file @ main.go:22:8
+   207  .  .  .  .  .  .  .  .  Sel: Close @ main.go:22:13
+   208  .  .  .  .  .  .  .  }
+   209  .  .  .  .  .  .  .  ArgList: nil
+   210  .  .  .  .  .  .  .  HasDots: false
+   211  .  .  .  .  .  .  }
+   212  .  .  .  .  .  }
+   213  .  .  .  .  .  5: *syntax.AssignStmt {
+   214  .  .  .  .  .  .  Op: :
+   215  .  .  .  .  .  .  Lhs: errh @ main.go:23:2
+   216  .  .  .  .  .  .  Rhs: *syntax.CallExpr {
+   217  .  .  .  .  .  .  .  Fun: *syntax.SelectorExpr {
+   218  .  .  .  .  .  .  .  .  X: syntax @ main.go:23:10
+   219  .  .  .  .  .  .  .  .  Sel: ErrorHandler @ main.go:23:17
+   220  .  .  .  .  .  .  .  }
+   221  .  .  .  .  .  .  .  ArgList: []syntax.Expr (1 entries) {
+   222  .  .  .  .  .  .  .  .  0: *syntax.FuncLit {
+   223  .  .  .  .  .  .  .  .  .  Type: *syntax.FuncType {
+   224  .  .  .  .  .  .  .  .  .  .  ParamList: []*syntax.Field (1 entries) {
+   225  .  .  .  .  .  .  .  .  .  .  .  0: *syntax.Field {
+   226  .  .  .  .  .  .  .  .  .  .  .  .  Name: err @ main.go:24:8
+   227  .  .  .  .  .  .  .  .  .  .  .  .  Type: error @ main.go:24:12
+   228  .  .  .  .  .  .  .  .  .  .  .  }
+   229  .  .  .  .  .  .  .  .  .  .  }
+   230  .  .  .  .  .  .  .  .  .  .  ResultList: nil
+   231  .  .  .  .  .  .  .  .  .  }
+   232  .  .  .  .  .  .  .  .  .  Body: *syntax.BlockStmt {
+   233  .  .  .  .  .  .  .  .  .  .  List: []syntax.Stmt (1 entries) {
+   234  .  .  .  .  .  .  .  .  .  .  .  0: *syntax.ExprStmt {
+   235  .  .  .  .  .  .  .  .  .  .  .  .  X: *syntax.CallExpr {
+   236  .  .  .  .  .  .  .  .  .  .  .  .  .  Fun: *syntax.SelectorExpr {
+   237  .  .  .  .  .  .  .  .  .  .  .  .  .  .  X: fmt @ main.go:25:4
+   238  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Sel: Println @ main.go:25:8
+   239  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+   240  .  .  .  .  .  .  .  .  .  .  .  .  .  ArgList: []syntax.Expr (1 entries) {
+   241  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: err @ main.go:25:16
+   242  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+   243  .  .  .  .  .  .  .  .  .  .  .  .  .  HasDots: false
+   244  .  .  .  .  .  .  .  .  .  .  .  .  }
+   245  .  .  .  .  .  .  .  .  .  .  .  }
+   246  .  .  .  .  .  .  .  .  .  .  }
+   247  .  .  .  .  .  .  .  .  .  .  Rbrace: syntax.Pos {}
+   248  .  .  .  .  .  .  .  .  .  }
+   249  .  .  .  .  .  .  .  .  }
+   250  .  .  .  .  .  .  .  }
+   251  .  .  .  .  .  .  .  HasDots: false
+   252  .  .  .  .  .  .  }
+   253  .  .  .  .  .  }
+   254  .  .  .  .  .  6: *syntax.AssignStmt {
+   255  .  .  .  .  .  .  Op: :
+   256  .  .  .  .  .  .  Lhs: mode @ main.go:28:2
+   257  .  .  .  .  .  .  Rhs: *syntax.SelectorExpr {
+   258  .  .  .  .  .  .  .  X: syntax @ main.go:28:10
+   259  .  .  .  .  .  .  .  Sel: AllowGenerics @ main.go:28:17
+   260  .  .  .  .  .  .  }
+   261  .  .  .  .  .  }
+   262  .  .  .  .  .  7: *syntax.AssignStmt {
+   263  .  .  .  .  .  .  Op: :
+   264  .  .  .  .  .  .  Lhs: *syntax.ListExpr {
+   265  .  .  .  .  .  .  .  ElemList: []syntax.Expr (2 entries) {
+   266  .  .  .  .  .  .  .  .  0: ast @ main.go:30:2
+   267  .  .  .  .  .  .  .  .  1: _ @ main.go:30:7
+   268  .  .  .  .  .  .  .  }
+   269  .  .  .  .  .  .  }
+   270  .  .  .  .  .  .  Rhs: *syntax.CallExpr {
+   271  .  .  .  .  .  .  .  Fun: *syntax.SelectorExpr {
+   272  .  .  .  .  .  .  .  .  X: syntax @ main.go:30:12
+   273  .  .  .  .  .  .  .  .  Sel: ParseFile @ main.go:30:19
+   274  .  .  .  .  .  .  .  }
+   275  .  .  .  .  .  .  .  ArgList: []syntax.Expr (4 entries) {
+   276  .  .  .  .  .  .  .  .  0: fname @ main.go:31:3
+   277  .  .  .  .  .  .  .  .  1: errh @ main.go:32:3
+   278  .  .  .  .  .  .  .  .  2: nil @ main.go:33:3
+   279  .  .  .  .  .  .  .  .  3: mode @ main.go:34:3
+   280  .  .  .  .  .  .  .  }
+   281  .  .  .  .  .  .  .  HasDots: false
+   282  .  .  .  .  .  .  }
+   283  .  .  .  .  .  }
+   284  .  .  .  .  .  8: *syntax.AssignStmt {
+   285  .  .  .  .  .  .  Op: :
+   286  .  .  .  .  .  .  Lhs: *syntax.ListExpr {
+   287  .  .  .  .  .  .  .  ElemList: []syntax.Expr (2 entries) {
+   288  .  .  .  .  .  .  .  .  0: f @ main.go:36:2
+   289  .  .  .  .  .  .  .  .  1: _ @ main.go:36:5
+   290  .  .  .  .  .  .  .  }
+   291  .  .  .  .  .  .  }
+   292  .  .  .  .  .  .  Rhs: *syntax.CallExpr {
+   293  .  .  .  .  .  .  .  Fun: *syntax.SelectorExpr {
+   294  .  .  .  .  .  .  .  .  X: os @ main.go:36:10
+   295  .  .  .  .  .  .  .  .  Sel: Create @ main.go:36:13
+   296  .  .  .  .  .  .  .  }
+   297  .  .  .  .  .  .  .  ArgList: []syntax.Expr (1 entries) {
+   298  .  .  .  .  .  .  .  .  0: *syntax.Operation {
+   299  .  .  .  .  .  .  .  .  .  Op: +
+   300  .  .  .  .  .  .  .  .  .  X: fname @ main.go:36:20
+   301  .  .  .  .  .  .  .  .  .  Y: *syntax.BasicLit {
+   302  .  .  .  .  .  .  .  .  .  .  Value: "\".ast\""
+   303  .  .  .  .  .  .  .  .  .  .  Kind: 4
+   304  .  .  .  .  .  .  .  .  .  .  Bad: false
+   305  .  .  .  .  .  .  .  .  .  }
+   306  .  .  .  .  .  .  .  .  }
+   307  .  .  .  .  .  .  .  }
+   308  .  .  .  .  .  .  .  HasDots: false
+   309  .  .  .  .  .  .  }
+   310  .  .  .  .  .  }
+   311  .  .  .  .  .  9: *syntax.CallStmt {
+   312  .  .  .  .  .  .  Tok: defer
+   313  .  .  .  .  .  .  Call: *syntax.CallExpr {
+   314  .  .  .  .  .  .  .  Fun: *syntax.SelectorExpr {
+   315  .  .  .  .  .  .  .  .  X: f @ main.go:37:8
+   316  .  .  .  .  .  .  .  .  Sel: Close @ main.go:37:10
+   317  .  .  .  .  .  .  .  }
+   318  .  .  .  .  .  .  .  ArgList: nil
+   319  .  .  .  .  .  .  .  HasDots: false
+   320  .  .  .  .  .  .  }
+   321  .  .  .  .  .  }
+   322  .  .  .  .  .  10: *syntax.ExprStmt {
+   323  .  .  .  .  .  .  X: *syntax.CallExpr {
+   324  .  .  .  .  .  .  .  Fun: *syntax.SelectorExpr {
+   325  .  .  .  .  .  .  .  .  X: syntax @ main.go:38:2
+   326  .  .  .  .  .  .  .  .  Sel: Fdump @ main.go:38:9
+   327  .  .  .  .  .  .  .  }
+   328  .  .  .  .  .  .  .  ArgList: []syntax.Expr (2 entries) {
+   329  .  .  .  .  .  .  .  .  0: f @ main.go:38:15
+   330  .  .  .  .  .  .  .  .  1: ast @ main.go:38:18
+   331  .  .  .  .  .  .  .  }
+   332  .  .  .  .  .  .  .  HasDots: false
+   333  .  .  .  .  .  .  }
+   334  .  .  .  .  .  }
+   335  .  .  .  .  }
+   336  .  .  .  .  Rbrace: syntax.Pos {}
+   337  .  .  .  }
+   338  .  .  }
+   339  .  }
+   340  .  EOF: syntax.Pos {}
+   341  }

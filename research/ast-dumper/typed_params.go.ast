@@ -1,0 +1,179 @@
+     1  *syntax.File {
+     2  .  Pragma: nil
+     3  .  PkgName: main @ typed_params.go:1:9
+     4  .  DeclList: []syntax.Decl (3 entries) {
+     5  .  .  0: *syntax.ImportDecl {
+     6  .  .  .  Group: *syntax.Group {}
+     7  .  .  .  Pragma: nil
+     8  .  .  .  LocalPkgName: nil
+     9  .  .  .  Path: *syntax.BasicLit {
+    10  .  .  .  .  Value: "\"fmt\""
+    11  .  .  .  .  Kind: 4
+    12  .  .  .  .  Bad: false
+    13  .  .  .  }
+    14  .  .  }
+    15  .  .  1: *syntax.FuncDecl {
+    16  .  .  .  Pragma: nil
+    17  .  .  .  Recv: nil
+    18  .  .  .  Name: main @ typed_params.go:7:6
+    19  .  .  .  TParamList: nil
+    20  .  .  .  Type: *syntax.FuncType {
+    21  .  .  .  .  ParamList: nil
+    22  .  .  .  .  ResultList: nil
+    23  .  .  .  }
+    24  .  .  .  Body: *syntax.BlockStmt {
+    25  .  .  .  .  List: []syntax.Stmt (3 entries) {
+    26  .  .  .  .  .  0: *syntax.ExprStmt {
+    27  .  .  .  .  .  .  X: *syntax.CallExpr {
+    28  .  .  .  .  .  .  .  Fun: Pp @ typed_params.go:8:2
+    29  .  .  .  .  .  .  .  ArgList: []syntax.Expr (1 entries) {
+    30  .  .  .  .  .  .  .  .  0: *syntax.CompositeLit {
+    31  .  .  .  .  .  .  .  .  .  Type: *syntax.SliceType {
+    32  .  .  .  .  .  .  .  .  .  .  Elem: string @ typed_params.go:8:7
+    33  .  .  .  .  .  .  .  .  .  }
+    34  .  .  .  .  .  .  .  .  .  ElemList: []syntax.Expr (3 entries) {
+    35  .  .  .  .  .  .  .  .  .  .  0: *syntax.BasicLit {
+    36  .  .  .  .  .  .  .  .  .  .  .  Value: "\"1\""
+    37  .  .  .  .  .  .  .  .  .  .  .  Kind: 4
+    38  .  .  .  .  .  .  .  .  .  .  .  Bad: false
+    39  .  .  .  .  .  .  .  .  .  .  }
+    40  .  .  .  .  .  .  .  .  .  .  1: *syntax.BasicLit {
+    41  .  .  .  .  .  .  .  .  .  .  .  Value: "\"2\""
+    42  .  .  .  .  .  .  .  .  .  .  .  Kind: 4
+    43  .  .  .  .  .  .  .  .  .  .  .  Bad: false
+    44  .  .  .  .  .  .  .  .  .  .  }
+    45  .  .  .  .  .  .  .  .  .  .  2: *syntax.BasicLit {
+    46  .  .  .  .  .  .  .  .  .  .  .  Value: "\"3\""
+    47  .  .  .  .  .  .  .  .  .  .  .  Kind: 4
+    48  .  .  .  .  .  .  .  .  .  .  .  Bad: false
+    49  .  .  .  .  .  .  .  .  .  .  }
+    50  .  .  .  .  .  .  .  .  .  }
+    51  .  .  .  .  .  .  .  .  .  NKeys: 0
+    52  .  .  .  .  .  .  .  .  .  Rbrace: syntax.Pos {}
+    53  .  .  .  .  .  .  .  .  }
+    54  .  .  .  .  .  .  .  }
+    55  .  .  .  .  .  .  .  HasDots: false
+    56  .  .  .  .  .  .  }
+    57  .  .  .  .  .  }
+    58  .  .  .  .  .  1: *syntax.ExprStmt {
+    59  .  .  .  .  .  .  X: *syntax.CallExpr {
+    60  .  .  .  .  .  .  .  Fun: *syntax.SelectorExpr {
+    61  .  .  .  .  .  .  .  .  X: fmt @ typed_params.go:9:2
+    62  .  .  .  .  .  .  .  .  Sel: Println @ typed_params.go:9:6
+    63  .  .  .  .  .  .  .  }
+    64  .  .  .  .  .  .  .  ArgList: nil
+    65  .  .  .  .  .  .  .  HasDots: false
+    66  .  .  .  .  .  .  }
+    67  .  .  .  .  .  }
+    68  .  .  .  .  .  2: *syntax.ExprStmt {
+    69  .  .  .  .  .  .  X: *syntax.CallExpr {
+    70  .  .  .  .  .  .  .  Fun: Pp @ typed_params.go:10:2
+    71  .  .  .  .  .  .  .  ArgList: []syntax.Expr (1 entries) {
+    72  .  .  .  .  .  .  .  .  0: *syntax.CompositeLit {
+    73  .  .  .  .  .  .  .  .  .  Type: *syntax.SliceType {
+    74  .  .  .  .  .  .  .  .  .  .  Elem: int @ typed_params.go:10:7
+    75  .  .  .  .  .  .  .  .  .  }
+    76  .  .  .  .  .  .  .  .  .  ElemList: []syntax.Expr (6 entries) {
+    77  .  .  .  .  .  .  .  .  .  .  0: *syntax.BasicLit {
+    78  .  .  .  .  .  .  .  .  .  .  .  Value: "1"
+    79  .  .  .  .  .  .  .  .  .  .  .  Kind: 0
+    80  .  .  .  .  .  .  .  .  .  .  .  Bad: false
+    81  .  .  .  .  .  .  .  .  .  .  }
+    82  .  .  .  .  .  .  .  .  .  .  1: *syntax.BasicLit {
+    83  .  .  .  .  .  .  .  .  .  .  .  Value: "2"
+    84  .  .  .  .  .  .  .  .  .  .  .  Kind: 0
+    85  .  .  .  .  .  .  .  .  .  .  .  Bad: false
+    86  .  .  .  .  .  .  .  .  .  .  }
+    87  .  .  .  .  .  .  .  .  .  .  2: *syntax.BasicLit {
+    88  .  .  .  .  .  .  .  .  .  .  .  Value: "3"
+    89  .  .  .  .  .  .  .  .  .  .  .  Kind: 0
+    90  .  .  .  .  .  .  .  .  .  .  .  Bad: false
+    91  .  .  .  .  .  .  .  .  .  .  }
+    92  .  .  .  .  .  .  .  .  .  .  3: *syntax.BasicLit {
+    93  .  .  .  .  .  .  .  .  .  .  .  Value: "4"
+    94  .  .  .  .  .  .  .  .  .  .  .  Kind: 0
+    95  .  .  .  .  .  .  .  .  .  .  .  Bad: false
+    96  .  .  .  .  .  .  .  .  .  .  }
+    97  .  .  .  .  .  .  .  .  .  .  4: *syntax.BasicLit {
+    98  .  .  .  .  .  .  .  .  .  .  .  Value: "5"
+    99  .  .  .  .  .  .  .  .  .  .  .  Kind: 0
+   100  .  .  .  .  .  .  .  .  .  .  .  Bad: false
+   101  .  .  .  .  .  .  .  .  .  .  }
+   102  .  .  .  .  .  .  .  .  .  .  5: *syntax.BasicLit {
+   103  .  .  .  .  .  .  .  .  .  .  .  Value: "6"
+   104  .  .  .  .  .  .  .  .  .  .  .  Kind: 0
+   105  .  .  .  .  .  .  .  .  .  .  .  Bad: false
+   106  .  .  .  .  .  .  .  .  .  .  }
+   107  .  .  .  .  .  .  .  .  .  }
+   108  .  .  .  .  .  .  .  .  .  NKeys: 0
+   109  .  .  .  .  .  .  .  .  .  Rbrace: syntax.Pos {}
+   110  .  .  .  .  .  .  .  .  }
+   111  .  .  .  .  .  .  .  }
+   112  .  .  .  .  .  .  .  HasDots: false
+   113  .  .  .  .  .  .  }
+   114  .  .  .  .  .  }
+   115  .  .  .  .  }
+   116  .  .  .  .  Rbrace: syntax.Pos {}
+   117  .  .  .  }
+   118  .  .  }
+   119  .  .  2: *syntax.FuncDecl {
+   120  .  .  .  Pragma: nil
+   121  .  .  .  Recv: nil
+   122  .  .  .  Name: Pp @ typed_params.go:13:6
+   123  .  .  .  TParamList: []*syntax.Field (1 entries) {
+   124  .  .  .  .  0: *syntax.Field {
+   125  .  .  .  .  .  Name: T @ typed_params.go:13:9
+   126  .  .  .  .  .  Type: any @ typed_params.go:13:11
+   127  .  .  .  .  }
+   128  .  .  .  }
+   129  .  .  .  Type: *syntax.FuncType {
+   130  .  .  .  .  ParamList: []*syntax.Field (1 entries) {
+   131  .  .  .  .  .  0: *syntax.Field {
+   132  .  .  .  .  .  .  Name: aa @ typed_params.go:13:16
+   133  .  .  .  .  .  .  Type: *syntax.SliceType {
+   134  .  .  .  .  .  .  .  Elem: T @ typed_params.go:13:21
+   135  .  .  .  .  .  .  }
+   136  .  .  .  .  .  }
+   137  .  .  .  .  }
+   138  .  .  .  .  ResultList: nil
+   139  .  .  .  }
+   140  .  .  .  Body: *syntax.BlockStmt {
+   141  .  .  .  .  List: []syntax.Stmt (1 entries) {
+   142  .  .  .  .  .  0: *syntax.ForStmt {
+   143  .  .  .  .  .  .  Init: *syntax.RangeClause {
+   144  .  .  .  .  .  .  .  Lhs: *syntax.ListExpr {
+   145  .  .  .  .  .  .  .  .  ElemList: []syntax.Expr (2 entries) {
+   146  .  .  .  .  .  .  .  .  .  0: _ @ typed_params.go:14:6
+   147  .  .  .  .  .  .  .  .  .  1: a @ typed_params.go:14:9
+   148  .  .  .  .  .  .  .  .  }
+   149  .  .  .  .  .  .  .  }
+   150  .  .  .  .  .  .  .  Def: true
+   151  .  .  .  .  .  .  .  X: aa @ typed_params.go:14:20
+   152  .  .  .  .  .  .  }
+   153  .  .  .  .  .  .  Cond: nil
+   154  .  .  .  .  .  .  Post: nil
+   155  .  .  .  .  .  .  Body: *syntax.BlockStmt {
+   156  .  .  .  .  .  .  .  List: []syntax.Stmt (1 entries) {
+   157  .  .  .  .  .  .  .  .  0: *syntax.ExprStmt {
+   158  .  .  .  .  .  .  .  .  .  X: *syntax.CallExpr {
+   159  .  .  .  .  .  .  .  .  .  .  Fun: *syntax.SelectorExpr {
+   160  .  .  .  .  .  .  .  .  .  .  .  X: fmt @ typed_params.go:15:3
+   161  .  .  .  .  .  .  .  .  .  .  .  Sel: Println @ typed_params.go:15:7
+   162  .  .  .  .  .  .  .  .  .  .  }
+   163  .  .  .  .  .  .  .  .  .  .  ArgList: []syntax.Expr (1 entries) {
+   164  .  .  .  .  .  .  .  .  .  .  .  0: a @ typed_params.go:15:15
+   165  .  .  .  .  .  .  .  .  .  .  }
+   166  .  .  .  .  .  .  .  .  .  .  HasDots: false
+   167  .  .  .  .  .  .  .  .  .  }
+   168  .  .  .  .  .  .  .  .  }
+   169  .  .  .  .  .  .  .  }
+   170  .  .  .  .  .  .  .  Rbrace: syntax.Pos {}
+   171  .  .  .  .  .  .  }
+   172  .  .  .  .  .  }
+   173  .  .  .  .  }
+   174  .  .  .  .  Rbrace: syntax.Pos {}
+   175  .  .  .  }
+   176  .  .  }
+   177  .  }
+   178  .  EOF: syntax.Pos {}
+   179  }

@@ -1,0 +1,88 @@
+     1  *syntax.File {
+     2  .  Pragma: nil
+     3  .  PkgName: main @ anonymous.go:1:9
+     4  .  DeclList: []syntax.Decl (4 entries) {
+     5  .  .  0: *syntax.ImportDecl {
+     6  .  .  .  Group: nil
+     7  .  .  .  Pragma: nil
+     8  .  .  .  LocalPkgName: nil
+     9  .  .  .  Path: *syntax.BasicLit {
+    10  .  .  .  .  Value: "\"fmt\""
+    11  .  .  .  .  Kind: 4
+    12  .  .  .  .  Bad: false
+    13  .  .  .  }
+    14  .  .  }
+    15  .  .  1: *syntax.TypeDecl {
+    16  .  .  .  Group: nil
+    17  .  .  .  Pragma: nil
+    18  .  .  .  Name: asd @ anonymous.go:5:6
+    19  .  .  .  TParamList: nil
+    20  .  .  .  Alias: false
+    21  .  .  .  Type: *syntax.StructType {
+    22  .  .  .  .  FieldList: []*syntax.Field (2 entries) {
+    23  .  .  .  .  .  0: *syntax.Field {
+    24  .  .  .  .  .  .  Name: Name @ anonymous.go:6:2
+    25  .  .  .  .  .  .  Type: string @ anonymous.go:6:14
+    26  .  .  .  .  .  }
+    27  .  .  .  .  .  1: *syntax.Field {
+    28  .  .  .  .  .  .  Name: Value @ anonymous.go:6:8
+    29  .  .  .  .  .  .  Type: string @ anonymous.go:6:14
+    30  .  .  .  .  .  }
+    31  .  .  .  .  }
+    32  .  .  .  .  TagList: nil
+    33  .  .  .  }
+    34  .  .  }
+    35  .  .  2: *syntax.TypeDecl {
+    36  .  .  .  Group: nil
+    37  .  .  .  Pragma: nil
+    38  .  .  .  Name: _ @ anonymous.go:9:6
+    39  .  .  .  TParamList: nil
+    40  .  .  .  Alias: false
+    41  .  .  .  Type: *syntax.StructType {
+    42  .  .  .  .  FieldList: []*syntax.Field (2 entries) {
+    43  .  .  .  .  .  0: *syntax.Field {
+    44  .  .  .  .  .  .  Name: Name @ anonymous.go:10:2
+    45  .  .  .  .  .  .  Type: string @ anonymous.go:10:14
+    46  .  .  .  .  .  }
+    47  .  .  .  .  .  1: *syntax.Field {
+    48  .  .  .  .  .  .  Name: Value @ anonymous.go:10:8
+    49  .  .  .  .  .  .  Type: string @ anonymous.go:10:14
+    50  .  .  .  .  .  }
+    51  .  .  .  .  }
+    52  .  .  .  .  TagList: nil
+    53  .  .  .  }
+    54  .  .  }
+    55  .  .  3: *syntax.FuncDecl {
+    56  .  .  .  Pragma: nil
+    57  .  .  .  Recv: nil
+    58  .  .  .  Name: main @ anonymous.go:13:6
+    59  .  .  .  TParamList: nil
+    60  .  .  .  Type: *syntax.FuncType {
+    61  .  .  .  .  ParamList: nil
+    62  .  .  .  .  ResultList: nil
+    63  .  .  .  }
+    64  .  .  .  Body: *syntax.BlockStmt {
+    65  .  .  .  .  List: []syntax.Stmt (1 entries) {
+    66  .  .  .  .  .  0: *syntax.ExprStmt {
+    67  .  .  .  .  .  .  X: *syntax.CallExpr {
+    68  .  .  .  .  .  .  .  Fun: *syntax.SelectorExpr {
+    69  .  .  .  .  .  .  .  .  X: fmt @ anonymous.go:14:2
+    70  .  .  .  .  .  .  .  .  Sel: Println @ anonymous.go:14:6
+    71  .  .  .  .  .  .  .  }
+    72  .  .  .  .  .  .  .  ArgList: []syntax.Expr (1 entries) {
+    73  .  .  .  .  .  .  .  .  0: *syntax.BasicLit {
+    74  .  .  .  .  .  .  .  .  .  Value: "\"go\""
+    75  .  .  .  .  .  .  .  .  .  Kind: 4
+    76  .  .  .  .  .  .  .  .  .  Bad: false
+    77  .  .  .  .  .  .  .  .  }
+    78  .  .  .  .  .  .  .  }
+    79  .  .  .  .  .  .  .  HasDots: false
+    80  .  .  .  .  .  .  }
+    81  .  .  .  .  .  }
+    82  .  .  .  .  }
+    83  .  .  .  .  Rbrace: syntax.Pos {}
+    84  .  .  .  }
+    85  .  .  }
+    86  .  }
+    87  .  EOF: syntax.Pos {}
+    88  }

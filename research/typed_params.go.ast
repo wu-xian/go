@@ -1,0 +1,353 @@
+     1  *syntax.File {
+     2  .  Pragma: nil
+     3  .  PkgName: main @ typed_params.go:1:9
+     4  .  DeclList: []syntax.Decl (10 entries) {
+     5  .  .  0: *syntax.ImportDecl {
+     6  .  .  .  Group: *syntax.Group {}
+     7  .  .  .  Pragma: nil
+     8  .  .  .  LocalPkgName: nil
+     9  .  .  .  Path: *syntax.BasicLit {
+    10  .  .  .  .  Value: "\"fmt\""
+    11  .  .  .  .  Kind: 4
+    12  .  .  .  .  Bad: false
+    13  .  .  .  }
+    14  .  .  }
+    15  .  .  1: *syntax.FuncDecl {
+    16  .  .  .  Pragma: nil
+    17  .  .  .  Recv: nil
+    18  .  .  .  Name: main @ typed_params.go:7:6
+    19  .  .  .  TParamList: nil
+    20  .  .  .  Type: *syntax.FuncType {
+    21  .  .  .  .  ParamList: nil
+    22  .  .  .  .  ResultList: nil
+    23  .  .  .  }
+    24  .  .  .  Body: *syntax.BlockStmt {
+    25  .  .  .  .  List: []syntax.Stmt (3 entries) {
+    26  .  .  .  .  .  0: *syntax.AssignStmt {
+    27  .  .  .  .  .  .  Op: :
+    28  .  .  .  .  .  .  Lhs: r1 @ typed_params.go:8:2
+    29  .  .  .  .  .  .  Rhs: *syntax.CompositeLit {
+    30  .  .  .  .  .  .  .  Type: Rock @ typed_params.go:8:8
+    31  .  .  .  .  .  .  .  ElemList: nil
+    32  .  .  .  .  .  .  .  NKeys: 0
+    33  .  .  .  .  .  .  .  Rbrace: syntax.Pos {}
+    34  .  .  .  .  .  .  }
+    35  .  .  .  .  .  }
+    36  .  .  .  .  .  1: *syntax.AssignStmt {
+    37  .  .  .  .  .  .  Op: :
+    38  .  .  .  .  .  .  Lhs: p1 @ typed_params.go:9:2
+    39  .  .  .  .  .  .  Rhs: *syntax.CompositeLit {
+    40  .  .  .  .  .  .  .  Type: Profe @ typed_params.go:9:8
+    41  .  .  .  .  .  .  .  ElemList: []syntax.Expr (1 entries) {
+    42  .  .  .  .  .  .  .  .  0: *syntax.KeyValueExpr {
+    43  .  .  .  .  .  .  .  .  .  Key: Content @ typed_params.go:9:14
+    44  .  .  .  .  .  .  .  .  .  Value: *syntax.BasicLit {
+    45  .  .  .  .  .  .  .  .  .  .  Value: "\"123321\""
+    46  .  .  .  .  .  .  .  .  .  .  Kind: 4
+    47  .  .  .  .  .  .  .  .  .  .  Bad: false
+    48  .  .  .  .  .  .  .  .  .  }
+    49  .  .  .  .  .  .  .  .  }
+    50  .  .  .  .  .  .  .  }
+    51  .  .  .  .  .  .  .  NKeys: 1
+    52  .  .  .  .  .  .  .  Rbrace: syntax.Pos {}
+    53  .  .  .  .  .  .  }
+    54  .  .  .  .  .  }
+    55  .  .  .  .  .  2: *syntax.ExprStmt {
+    56  .  .  .  .  .  .  X: *syntax.CallExpr {
+    57  .  .  .  .  .  .  .  Fun: Pp @ typed_params.go:10:2
+    58  .  .  .  .  .  .  .  ArgList: []syntax.Expr (2 entries) {
+    59  .  .  .  .  .  .  .  .  0: *syntax.CompositeLit {
+    60  .  .  .  .  .  .  .  .  .  Type: *syntax.SliceType {
+    61  .  .  .  .  .  .  .  .  .  .  Elem: Rock @ typed_params.go:10:7
+    62  .  .  .  .  .  .  .  .  .  }
+    63  .  .  .  .  .  .  .  .  .  ElemList: []syntax.Expr (1 entries) {
+    64  .  .  .  .  .  .  .  .  .  .  0: r1 @ typed_params.go:10:12
+    65  .  .  .  .  .  .  .  .  .  }
+    66  .  .  .  .  .  .  .  .  .  NKeys: 0
+    67  .  .  .  .  .  .  .  .  .  Rbrace: syntax.Pos {}
+    68  .  .  .  .  .  .  .  .  }
+    69  .  .  .  .  .  .  .  .  1: p1 @ typed_params.go:10:16
+    70  .  .  .  .  .  .  .  }
+    71  .  .  .  .  .  .  .  HasDots: false
+    72  .  .  .  .  .  .  }
+    73  .  .  .  .  .  }
+    74  .  .  .  .  }
+    75  .  .  .  .  Rbrace: syntax.Pos {}
+    76  .  .  .  }
+    77  .  .  }
+    78  .  .  2: *syntax.TypeDecl {
+    79  .  .  .  Group: nil
+    80  .  .  .  Pragma: nil
+    81  .  .  .  Name: wux @ typed_params.go:13:6
+    82  .  .  .  TParamList: nil
+    83  .  .  .  Alias: false
+    84  .  .  .  Type: *syntax.InterfaceType {
+    85  .  .  .  .  MethodList: []*syntax.Field (1 entries) {
+    86  .  .  .  .  .  0: *syntax.Field {
+    87  .  .  .  .  .  .  Name: nil
+    88  .  .  .  .  .  .  Type: *syntax.Operation {
+    89  .  .  .  .  .  .  .  Op: |
+    90  .  .  .  .  .  .  .  X: *syntax.Operation {
+    91  .  .  .  .  .  .  .  .  Op: ~
+    92  .  .  .  .  .  .  .  .  X: string @ typed_params.go:13:22
+    93  .  .  .  .  .  .  .  .  Y: nil
+    94  .  .  .  .  .  .  .  }
+    95  .  .  .  .  .  .  .  Y: *syntax.Operation {
+    96  .  .  .  .  .  .  .  .  Op: ~
+    97  .  .  .  .  .  .  .  .  X: int @ typed_params.go:13:30
+    98  .  .  .  .  .  .  .  .  Y: nil
+    99  .  .  .  .  .  .  .  }
+   100  .  .  .  .  .  .  }
+   101  .  .  .  .  .  }
+   102  .  .  .  .  }
+   103  .  .  .  }
+   104  .  .  }
+   105  .  .  3: *syntax.TypeDecl {
+   106  .  .  .  Group: nil
+   107  .  .  .  Pragma: nil
+   108  .  .  .  Name: Rocker @ typed_params.go:14:6
+   109  .  .  .  TParamList: nil
+   110  .  .  .  Alias: false
+   111  .  .  .  Type: *syntax.InterfaceType {
+   112  .  .  .  .  MethodList: []*syntax.Field (1 entries) {
+   113  .  .  .  .  .  0: *syntax.Field {
+   114  .  .  .  .  .  .  Name: Puuuuu @ typed_params.go:15:2
+   115  .  .  .  .  .  .  Type: *syntax.FuncType {
+   116  .  .  .  .  .  .  .  ParamList: nil
+   117  .  .  .  .  .  .  .  ResultList: []*syntax.Field (1 entries) {
+   118  .  .  .  .  .  .  .  .  0: *syntax.Field {
+   119  .  .  .  .  .  .  .  .  .  Name: nil
+   120  .  .  .  .  .  .  .  .  .  Type: Rocker @ typed_params.go:15:11
+   121  .  .  .  .  .  .  .  .  }
+   122  .  .  .  .  .  .  .  }
+   123  .  .  .  .  .  .  }
+   124  .  .  .  .  .  }
+   125  .  .  .  .  }
+   126  .  .  .  }
+   127  .  .  }
+   128  .  .  4: *syntax.TypeDecl {
+   129  .  .  .  Group: nil
+   130  .  .  .  Pragma: nil
+   131  .  .  .  Name: Rock @ typed_params.go:18:6
+   132  .  .  .  TParamList: nil
+   133  .  .  .  Alias: false
+   134  .  .  .  Type: *syntax.StructType {
+   135  .  .  .  .  FieldList: nil
+   136  .  .  .  .  TagList: nil
+   137  .  .  .  }
+   138  .  .  }
+   139  .  .  5: *syntax.FuncDecl {
+   140  .  .  .  Pragma: nil
+   141  .  .  .  Recv: *syntax.Field {
+   142  .  .  .  .  Name: h @ typed_params.go:19:7
+   143  .  .  .  .  Type: Rock @ typed_params.go:19:9
+   144  .  .  .  }
+   145  .  .  .  Name: Puuuuu @ typed_params.go:19:15
+   146  .  .  .  TParamList: nil
+   147  .  .  .  Type: *syntax.FuncType {
+   148  .  .  .  .  ParamList: nil
+   149  .  .  .  .  ResultList: []*syntax.Field (1 entries) {
+   150  .  .  .  .  .  0: *syntax.Field {
+   151  .  .  .  .  .  .  Name: nil
+   152  .  .  .  .  .  .  Type: Rocker @ typed_params.go:19:24
+   153  .  .  .  .  .  }
+   154  .  .  .  .  }
+   155  .  .  .  }
+   156  .  .  .  Body: *syntax.BlockStmt {
+   157  .  .  .  .  List: []syntax.Stmt (2 entries) {
+   158  .  .  .  .  .  0: *syntax.ExprStmt {
+   159  .  .  .  .  .  .  X: *syntax.CallExpr {
+   160  .  .  .  .  .  .  .  Fun: *syntax.SelectorExpr {
+   161  .  .  .  .  .  .  .  .  X: fmt @ typed_params.go:20:2
+   162  .  .  .  .  .  .  .  .  Sel: Println @ typed_params.go:20:6
+   163  .  .  .  .  .  .  .  }
+   164  .  .  .  .  .  .  .  ArgList: []syntax.Expr (1 entries) {
+   165  .  .  .  .  .  .  .  .  0: *syntax.BasicLit {
+   166  .  .  .  .  .  .  .  .  .  Value: "\"pooo~\""
+   167  .  .  .  .  .  .  .  .  .  Kind: 4
+   168  .  .  .  .  .  .  .  .  .  Bad: false
+   169  .  .  .  .  .  .  .  .  }
+   170  .  .  .  .  .  .  .  }
+   171  .  .  .  .  .  .  .  HasDots: false
+   172  .  .  .  .  .  .  }
+   173  .  .  .  .  .  }
+   174  .  .  .  .  .  1: *syntax.ReturnStmt {
+   175  .  .  .  .  .  .  Results: h @ typed_params.go:21:9
+   176  .  .  .  .  .  }
+   177  .  .  .  .  }
+   178  .  .  .  .  Rbrace: syntax.Pos {}
+   179  .  .  .  }
+   180  .  .  }
+   181  .  .  6: *syntax.TypeDecl {
+   182  .  .  .  Group: nil
+   183  .  .  .  Pragma: nil
+   184  .  .  .  Name: Profer @ typed_params.go:24:6
+   185  .  .  .  TParamList: nil
+   186  .  .  .  Alias: false
+   187  .  .  .  Type: *syntax.InterfaceType {
+   188  .  .  .  .  MethodList: []*syntax.Field (1 entries) {
+   189  .  .  .  .  .  0: *syntax.Field {
+   190  .  .  .  .  .  .  Name: Poler @ typed_params.go:25:2
+   191  .  .  .  .  .  .  Type: *syntax.FuncType {
+   192  .  .  .  .  .  .  .  ParamList: nil
+   193  .  .  .  .  .  .  .  ResultList: []*syntax.Field (1 entries) {
+   194  .  .  .  .  .  .  .  .  0: *syntax.Field {
+   195  .  .  .  .  .  .  .  .  .  Name: nil
+   196  .  .  .  .  .  .  .  .  .  Type: string @ typed_params.go:25:10
+   197  .  .  .  .  .  .  .  .  }
+   198  .  .  .  .  .  .  .  }
+   199  .  .  .  .  .  .  }
+   200  .  .  .  .  .  }
+   201  .  .  .  .  }
+   202  .  .  .  }
+   203  .  .  }
+   204  .  .  7: *syntax.TypeDecl {
+   205  .  .  .  Group: nil
+   206  .  .  .  Pragma: nil
+   207  .  .  .  Name: Profe @ typed_params.go:27:6
+   208  .  .  .  TParamList: nil
+   209  .  .  .  Alias: false
+   210  .  .  .  Type: *syntax.StructType {
+   211  .  .  .  .  FieldList: []*syntax.Field (1 entries) {
+   212  .  .  .  .  .  0: *syntax.Field {
+   213  .  .  .  .  .  .  Name: Content @ typed_params.go:28:2
+   214  .  .  .  .  .  .  Type: string @ typed_params.go:28:10
+   215  .  .  .  .  .  }
+   216  .  .  .  .  }
+   217  .  .  .  .  TagList: nil
+   218  .  .  .  }
+   219  .  .  }
+   220  .  .  8: *syntax.FuncDecl {
+   221  .  .  .  Pragma: nil
+   222  .  .  .  Recv: *syntax.Field {
+   223  .  .  .  .  Name: h @ typed_params.go:30:7
+   224  .  .  .  .  Type: Profe @ typed_params.go:30:9
+   225  .  .  .  }
+   226  .  .  .  Name: Poler @ typed_params.go:30:16
+   227  .  .  .  TParamList: nil
+   228  .  .  .  Type: *syntax.FuncType {
+   229  .  .  .  .  ParamList: nil
+   230  .  .  .  .  ResultList: []*syntax.Field (1 entries) {
+   231  .  .  .  .  .  0: *syntax.Field {
+   232  .  .  .  .  .  .  Name: nil
+   233  .  .  .  .  .  .  Type: string @ typed_params.go:30:24
+   234  .  .  .  .  .  }
+   235  .  .  .  .  }
+   236  .  .  .  }
+   237  .  .  .  Body: *syntax.BlockStmt {
+   238  .  .  .  .  List: []syntax.Stmt (1 entries) {
+   239  .  .  .  .  .  0: *syntax.ReturnStmt {
+   240  .  .  .  .  .  .  Results: *syntax.SelectorExpr {
+   241  .  .  .  .  .  .  .  X: h @ typed_params.go:31:9
+   242  .  .  .  .  .  .  .  Sel: Content @ typed_params.go:31:11
+   243  .  .  .  .  .  .  }
+   244  .  .  .  .  .  }
+   245  .  .  .  .  }
+   246  .  .  .  .  Rbrace: syntax.Pos {}
+   247  .  .  .  }
+   248  .  .  }
+   249  .  .  9: *syntax.FuncDecl {
+   250  .  .  .  Pragma: nil
+   251  .  .  .  Recv: nil
+   252  .  .  .  Name: Pp @ typed_params.go:34:6
+   253  .  .  .  TParamList: []*syntax.Field (2 entries) {
+   254  .  .  .  .  0: *syntax.Field {
+   255  .  .  .  .  .  Name: T @ typed_params.go:34:9
+   256  .  .  .  .  .  Type: Rocker @ typed_params.go:34:11
+   257  .  .  .  .  }
+   258  .  .  .  .  1: *syntax.Field {
+   259  .  .  .  .  .  Name: T2 @ typed_params.go:34:18
+   260  .  .  .  .  .  Type: Profer @ typed_params.go:34:21
+   261  .  .  .  .  }
+   262  .  .  .  }
+   263  .  .  .  Type: *syntax.FuncType {
+   264  .  .  .  .  ParamList: []*syntax.Field (2 entries) {
+   265  .  .  .  .  .  0: *syntax.Field {
+   266  .  .  .  .  .  .  Name: aa @ typed_params.go:34:29
+   267  .  .  .  .  .  .  Type: *syntax.SliceType {
+   268  .  .  .  .  .  .  .  Elem: T @ typed_params.go:34:34
+   269  .  .  .  .  .  .  }
+   270  .  .  .  .  .  }
+   271  .  .  .  .  .  1: *syntax.Field {
+   272  .  .  .  .  .  .  Name: bb @ typed_params.go:34:36
+   273  .  .  .  .  .  .  Type: T2 @ typed_params.go:34:39
+   274  .  .  .  .  .  }
+   275  .  .  .  .  }
+   276  .  .  .  .  ResultList: nil
+   277  .  .  .  }
+   278  .  .  .  Body: *syntax.BlockStmt {
+   279  .  .  .  .  List: []syntax.Stmt (2 entries) {
+   280  .  .  .  .  .  0: *syntax.ForStmt {
+   281  .  .  .  .  .  .  Init: *syntax.RangeClause {
+   282  .  .  .  .  .  .  .  Lhs: *syntax.ListExpr {
+   283  .  .  .  .  .  .  .  .  ElemList: []syntax.Expr (2 entries) {
+   284  .  .  .  .  .  .  .  .  .  0: _ @ typed_params.go:35:6
+   285  .  .  .  .  .  .  .  .  .  1: a @ typed_params.go:35:9
+   286  .  .  .  .  .  .  .  .  }
+   287  .  .  .  .  .  .  .  }
+   288  .  .  .  .  .  .  .  Def: true
+   289  .  .  .  .  .  .  .  X: aa @ typed_params.go:35:20
+   290  .  .  .  .  .  .  }
+   291  .  .  .  .  .  .  Cond: nil
+   292  .  .  .  .  .  .  Post: nil
+   293  .  .  .  .  .  .  Body: *syntax.BlockStmt {
+   294  .  .  .  .  .  .  .  List: []syntax.Stmt (1 entries) {
+   295  .  .  .  .  .  .  .  .  0: *syntax.ExprStmt {
+   296  .  .  .  .  .  .  .  .  .  X: *syntax.CallExpr {
+   297  .  .  .  .  .  .  .  .  .  .  Fun: *syntax.SelectorExpr {
+   298  .  .  .  .  .  .  .  .  .  .  .  X: fmt @ typed_params.go:36:3
+   299  .  .  .  .  .  .  .  .  .  .  .  Sel: Println @ typed_params.go:36:7
+   300  .  .  .  .  .  .  .  .  .  .  }
+   301  .  .  .  .  .  .  .  .  .  .  ArgList: []syntax.Expr (2 entries) {
+   302  .  .  .  .  .  .  .  .  .  .  .  0: *syntax.BasicLit {
+   303  .  .  .  .  .  .  .  .  .  .  .  .  Value: "\"asddas\""
+   304  .  .  .  .  .  .  .  .  .  .  .  .  Kind: 4
+   305  .  .  .  .  .  .  .  .  .  .  .  .  Bad: false
+   306  .  .  .  .  .  .  .  .  .  .  .  }
+   307  .  .  .  .  .  .  .  .  .  .  .  1: *syntax.CallExpr {
+   308  .  .  .  .  .  .  .  .  .  .  .  .  Fun: *syntax.SelectorExpr {
+   309  .  .  .  .  .  .  .  .  .  .  .  .  .  X: a @ typed_params.go:36:24
+   310  .  .  .  .  .  .  .  .  .  .  .  .  .  Sel: Puuuuu @ typed_params.go:36:26
+   311  .  .  .  .  .  .  .  .  .  .  .  .  }
+   312  .  .  .  .  .  .  .  .  .  .  .  .  ArgList: nil
+   313  .  .  .  .  .  .  .  .  .  .  .  .  HasDots: false
+   314  .  .  .  .  .  .  .  .  .  .  .  }
+   315  .  .  .  .  .  .  .  .  .  .  }
+   316  .  .  .  .  .  .  .  .  .  .  HasDots: false
+   317  .  .  .  .  .  .  .  .  .  }
+   318  .  .  .  .  .  .  .  .  }
+   319  .  .  .  .  .  .  .  }
+   320  .  .  .  .  .  .  .  Rbrace: syntax.Pos {}
+   321  .  .  .  .  .  .  }
+   322  .  .  .  .  .  }
+   323  .  .  .  .  .  1: *syntax.ExprStmt {
+   324  .  .  .  .  .  .  X: *syntax.CallExpr {
+   325  .  .  .  .  .  .  .  Fun: *syntax.SelectorExpr {
+   326  .  .  .  .  .  .  .  .  X: fmt @ typed_params.go:38:2
+   327  .  .  .  .  .  .  .  .  Sel: Println @ typed_params.go:38:6
+   328  .  .  .  .  .  .  .  }
+   329  .  .  .  .  .  .  .  ArgList: []syntax.Expr (2 entries) {
+   330  .  .  .  .  .  .  .  .  0: *syntax.BasicLit {
+   331  .  .  .  .  .  .  .  .  .  Value: "\"poler\""
+   332  .  .  .  .  .  .  .  .  .  Kind: 4
+   333  .  .  .  .  .  .  .  .  .  Bad: false
+   334  .  .  .  .  .  .  .  .  }
+   335  .  .  .  .  .  .  .  .  1: *syntax.CallExpr {
+   336  .  .  .  .  .  .  .  .  .  Fun: *syntax.SelectorExpr {
+   337  .  .  .  .  .  .  .  .  .  .  X: bb @ typed_params.go:38:22
+   338  .  .  .  .  .  .  .  .  .  .  Sel: Poler @ typed_params.go:38:25
+   339  .  .  .  .  .  .  .  .  .  }
+   340  .  .  .  .  .  .  .  .  .  ArgList: nil
+   341  .  .  .  .  .  .  .  .  .  HasDots: false
+   342  .  .  .  .  .  .  .  .  }
+   343  .  .  .  .  .  .  .  }
+   344  .  .  .  .  .  .  .  HasDots: false
+   345  .  .  .  .  .  .  }
+   346  .  .  .  .  .  }
+   347  .  .  .  .  }
+   348  .  .  .  .  Rbrace: syntax.Pos {}
+   349  .  .  .  }
+   350  .  .  }
+   351  .  }
+   352  .  EOF: syntax.Pos {}
+   353  }
