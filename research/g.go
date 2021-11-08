@@ -1,29 +1,19 @@
 package main
 
 import (
+	"fmt"
 	"runtime"
-	"time"
 )
 
 func main() {
-	defer func() {
-		runtime.GC()
-		println("numg", runtime.NumGoroutine())
-	}()
-	runtime.GOMAXPROCS(10)
-	for i := 0; i < 100000; i++ {
-		go timewait()
-		println("numg", runtime.NumGoroutine())
-		// if i%3 == 0 {
-		// 	runtime.GC()
-		// }
+	a := runtime.GetCurG()
+	fmt.Printf("%+v", a.G)
+	as := runtime.GetAllGs()
+	fmt.Printf("%+v", as)
+	for i, aa := range as {
+		fmt.Println()
+		fmt.Println(i)
+		fmt.Printf("%+v", aa.G)
+		fmt.Println()
 	}
-	println("numg", runtime.NumGoroutine())
-	println("numg", runtime.NumGoroutine())
-	println("numg", runtime.NumGoroutine())
-	println("numg", runtime.NumGoroutine())
-}
-
-func timewait() {
-	<-time.After(time.Microsecond * 5)
 }
