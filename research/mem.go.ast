@@ -1,0 +1,82 @@
+     1  *syntax.File {
+     2  .  Pragma: nil
+     3  .  PkgName: main @ mem.go:1:9
+     4  .  DeclList: []syntax.Decl (2 entries) {
+     5  .  .  0: *syntax.ImportDecl {
+     6  .  .  .  Group: nil
+     7  .  .  .  Pragma: nil
+     8  .  .  .  LocalPkgName: nil
+     9  .  .  .  Path: *syntax.BasicLit {
+    10  .  .  .  .  Value: "\"fmt\""
+    11  .  .  .  .  Kind: 4
+    12  .  .  .  .  Bad: false
+    13  .  .  .  }
+    14  .  .  }
+    15  .  .  1: *syntax.FuncDecl {
+    16  .  .  .  Pragma: nil
+    17  .  .  .  Recv: nil
+    18  .  .  .  Name: main @ mem.go:5:6
+    19  .  .  .  TParamList: nil
+    20  .  .  .  Type: *syntax.FuncType {
+    21  .  .  .  .  ParamList: nil
+    22  .  .  .  .  ResultList: nil
+    23  .  .  .  }
+    24  .  .  .  Body: *syntax.BlockStmt {
+    25  .  .  .  .  List: []syntax.Stmt (2 entries) {
+    26  .  .  .  .  .  0: *syntax.CallStmt {
+    27  .  .  .  .  .  .  Tok: go
+    28  .  .  .  .  .  .  Call: *syntax.CallExpr {
+    29  .  .  .  .  .  .  .  Fun: *syntax.FuncLit {
+    30  .  .  .  .  .  .  .  .  Type: *syntax.FuncType {
+    31  .  .  .  .  .  .  .  .  .  ParamList: nil
+    32  .  .  .  .  .  .  .  .  .  ResultList: nil
+    33  .  .  .  .  .  .  .  .  }
+    34  .  .  .  .  .  .  .  .  Body: *syntax.BlockStmt {
+    35  .  .  .  .  .  .  .  .  .  List: []syntax.Stmt (1 entries) {
+    36  .  .  .  .  .  .  .  .  .  .  0: *syntax.ExprStmt {
+    37  .  .  .  .  .  .  .  .  .  .  .  X: *syntax.CallExpr {
+    38  .  .  .  .  .  .  .  .  .  .  .  .  Fun: *syntax.SelectorExpr {
+    39  .  .  .  .  .  .  .  .  .  .  .  .  .  X: fmt @ mem.go:7:3
+    40  .  .  .  .  .  .  .  .  .  .  .  .  .  Sel: Println @ mem.go:7:7
+    41  .  .  .  .  .  .  .  .  .  .  .  .  }
+    42  .  .  .  .  .  .  .  .  .  .  .  .  ArgList: []syntax.Expr (1 entries) {
+    43  .  .  .  .  .  .  .  .  .  .  .  .  .  0: *syntax.BasicLit {
+    44  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Value: "\"in another g\""
+    45  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Kind: 4
+    46  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Bad: false
+    47  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+    48  .  .  .  .  .  .  .  .  .  .  .  .  }
+    49  .  .  .  .  .  .  .  .  .  .  .  .  HasDots: false
+    50  .  .  .  .  .  .  .  .  .  .  .  }
+    51  .  .  .  .  .  .  .  .  .  .  }
+    52  .  .  .  .  .  .  .  .  .  }
+    53  .  .  .  .  .  .  .  .  .  Rbrace: syntax.Pos {}
+    54  .  .  .  .  .  .  .  .  }
+    55  .  .  .  .  .  .  .  }
+    56  .  .  .  .  .  .  .  ArgList: nil
+    57  .  .  .  .  .  .  .  HasDots: false
+    58  .  .  .  .  .  .  }
+    59  .  .  .  .  .  }
+    60  .  .  .  .  .  1: *syntax.ExprStmt {
+    61  .  .  .  .  .  .  X: *syntax.CallExpr {
+    62  .  .  .  .  .  .  .  Fun: *syntax.SelectorExpr {
+    63  .  .  .  .  .  .  .  .  X: fmt @ mem.go:9:2
+    64  .  .  .  .  .  .  .  .  Sel: Println @ mem.go:9:6
+    65  .  .  .  .  .  .  .  }
+    66  .  .  .  .  .  .  .  ArgList: []syntax.Expr (1 entries) {
+    67  .  .  .  .  .  .  .  .  0: *syntax.BasicLit {
+    68  .  .  .  .  .  .  .  .  .  Value: "\"mem in go\""
+    69  .  .  .  .  .  .  .  .  .  Kind: 4
+    70  .  .  .  .  .  .  .  .  .  Bad: false
+    71  .  .  .  .  .  .  .  .  }
+    72  .  .  .  .  .  .  .  }
+    73  .  .  .  .  .  .  .  HasDots: false
+    74  .  .  .  .  .  .  }
+    75  .  .  .  .  .  }
+    76  .  .  .  .  }
+    77  .  .  .  .  Rbrace: syntax.Pos {}
+    78  .  .  .  }
+    79  .  .  }
+    80  .  }
+    81  .  EOF: syntax.Pos {}
+    82  }
