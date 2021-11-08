@@ -16,4 +16,19 @@ func main() {
 		fmt.Printf("%+v", aa.G)
 		fmt.Println()
 	}
+
+	defer func() {
+		//defer1
+		var a = 1
+		var _ = a
+	}()
+
+	defer func() {
+		//defer2
+		var a = 2
+		var _ = a
+	}()
+	fmt.Printf("\n\np:  %+v", runtime.GetCurP().P)
+
+	fmt.Println("gcount:", runtime.GetGCount())
 }
