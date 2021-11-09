@@ -5,7 +5,6 @@ import (
 	"runtime"
 	"unsafe"
 
-	"github.com/golang/go/research/mypkg"
 	"github.com/wu-xian/go/research/mypkg"
 )
 
@@ -35,12 +34,16 @@ func main() {
 
 	fmt.Println("=============")
 
-	pp := mypkg.PrintThis{
+	var pp interface{} = mypkg.PrintThis{
 		K: "KKK",
 		V: "VVV",
 		Next: &mypkg.PrintThis{
 			K: "KK",
 			V: "VV",
+			Next: &mypkg.PrintThis{
+				K: "K",
+				V: "V",
+			},
 		},
 	}
 

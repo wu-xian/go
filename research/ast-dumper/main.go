@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/golang/go/research/ast-dumper/syntax"
+	"github.com/wu-xian/go/research/ast-dumper/syntax"
 )
 
 func main() {
