@@ -1,0 +1,53 @@
+"".main STEXT size=96 args=0x0 locals=0x18 funcid=0x0
+	0x0000 00000 (pp.go:3)	TEXT	"".main(SB), ABIInternal, $32-0
+	0x0000 00000 (pp.go:3)	MOVD	16(g), R1
+	0x0004 00004 (pp.go:3)	PCDATA	$0, $-2
+	0x0004 00004 (pp.go:3)	MOVD	RSP, R2
+	0x0008 00008 (pp.go:3)	CMP	R1, R2
+	0x000c 00012 (pp.go:3)	BLS	72
+	0x0010 00016 (pp.go:3)	PCDATA	$0, $-1
+	0x0010 00016 (pp.go:3)	MOVD.W	R30, -32(RSP)
+	0x0014 00020 (pp.go:3)	MOVD	R29, -8(RSP)
+	0x0018 00024 (pp.go:3)	SUB	$8, RSP, R29
+	0x001c 00028 (pp.go:3)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x001c 00028 (pp.go:3)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x001c 00028 (pp.go:4)	PCDATA	$1, ZR
+	0x001c 00028 (pp.go:4)	CALL	runtime.printlock(SB)
+	0x0020 00032 (pp.go:4)	MOVD	$go.string."e123321e\n"(SB), R0
+	0x0028 00040 (pp.go:4)	MOVD	R0, 8(RSP)
+	0x002c 00044 (pp.go:4)	MOVD	$9, R0
+	0x0030 00048 (pp.go:4)	MOVD	R0, 16(RSP)
+	0x0034 00052 (pp.go:4)	CALL	runtime.printstring(SB)
+	0x0038 00056 (pp.go:4)	CALL	runtime.printunlock(SB)
+	0x003c 00060 (pp.go:5)	MOVD	-8(RSP), R29
+	0x0040 00064 (pp.go:5)	MOVD.P	32(RSP), R30
+	0x0044 00068 (pp.go:5)	RET	(R30)
+	0x0048 00072 (pp.go:5)	NOP
+	0x0048 00072 (pp.go:3)	PCDATA	$1, $-1
+	0x0048 00072 (pp.go:3)	PCDATA	$0, $-2
+	0x0048 00072 (pp.go:3)	MOVD	R30, R3
+	0x004c 00076 (pp.go:3)	CALL	runtime.morestack_noctxt(SB)
+	0x0050 00080 (pp.go:3)	PCDATA	$0, $-1
+	0x0050 00080 (pp.go:3)	JMP	0
+	0x0000 81 0b 40 f9 e2 03 00 91 5f 00 01 eb e9 01 00 54  ..@....._......T
+	0x0010 fe 0f 1e f8 fd 83 1f f8 fd 23 00 d1 00 00 00 94  .........#......
+	0x0020 00 00 00 90 00 00 00 91 e0 07 00 f9 20 01 80 d2  ............ ...
+	0x0030 e0 0b 00 f9 00 00 00 94 00 00 00 94 fd 83 5f f8  .............._.
+	0x0040 fe 07 42 f8 c0 03 5f d6 e3 03 1e aa 00 00 00 94  ..B..._.........
+	0x0050 ec ff ff 17 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 28+4 t=10 runtime.printlock+0
+	rel 32+8 t=3 go.string."e123321e\n"+0
+	rel 52+4 t=10 runtime.printstring+0
+	rel 56+4 t=10 runtime.printunlock+0
+	rel 76+4 t=10 runtime.morestack_noctxt+0
+go.cuinfo.packagename. SDWARFCUINFO dupok size=0
+	0x0000 6d 61 69 6e                                      main
+""..inittask SNOPTRDATA size=24
+	0x0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00                          ........
+go.string."e123321e" SRODATA dupok size=8
+	0x0000 65 31 32 33 33 32 31 65                          e123321e
+go.string."e123321e\n" SRODATA dupok size=9
+	0x0000 65 31 32 33 33 32 31 65 0a                       e123321e.
+gclocals·33cdeccccebe80329f1fdbee7f5874cb SRODATA dupok size=8
+	0x0000 01 00 00 00 00 00 00 00                          ........

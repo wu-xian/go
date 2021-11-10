@@ -56,5 +56,8 @@ func (self TheEface) GetType() TheType {
 func (self TheEface) GetTypeName() string {
 	return self._type.string()
 }
+func (self TheEface) GetPkgPath() string {
+	return self._type.pkgpath()
+}
 
 type TheIface iface

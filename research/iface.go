@@ -49,4 +49,7 @@ func main() {
 
 	ppEface := (*runtime.TheEface)(unsafe.Pointer(&pp))
 	fmt.Printf("\n%+v\n", ppEface.GetTypeName())
+
+	fmt.Println("===asd=a=sd=a=da=sd=")
+	fmt.Printf("%s", ppEface.GetPkgPath())
 }
