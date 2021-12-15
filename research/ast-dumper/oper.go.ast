@@ -1,0 +1,6 @@
+     1  *syntax.File {
+     2  .  Pragma: nil
+     3  .  PkgName: main @ oper.go:1:10
+     4  .  DeclList: nil
+     5  .  EOF: syntax.Pos {}
+     6  }
